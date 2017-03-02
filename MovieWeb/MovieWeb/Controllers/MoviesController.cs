@@ -21,32 +21,32 @@ namespace MovieWeb.Controllers
         }
 
         // GET: Movies/Details/5
-        //public ActionResult Index(string movieName, string searchString)
-        //{
-        //    var NameLst = new List<string>();
+        public ActionResult Index(string movieName, string searchString)
+        {
+            var NameLst = new List<string>();
 
-        //    var NameQry = from d in db.Movies
-        //                  orderby d.Name
-        //                  select d.Name;
+            var NameQry = from d in db.Movies
+                          orderby d.Name
+                          select d.Name;
 
-        //    NameLst.AddRange(NameQry.Distinct());
-        //    ViewBag.movieGenre = new SelectList(NameLst);
+            NameLst.AddRange(NameQry.Distinct());
+            ViewBag.movieGenre = new SelectList(NameLst);
 
-        //    var movies = from m in db.Movies
-        //                 select m;
+            var movies = from m in db.Movies
+                         select m;
 
-        //    if (!String.IsNullOrEmpty(searchString))
-        //    {
-        //        movies = movies.Where(s => s.Name.Contains(searchString));
-        //    }
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.Name.Contains(searchString));
+            }
 
-        //    if (!string.IsNullOrEmpty(movieName))
-        //    {
-        //        movies = movies.Where(x => x.Name == movieName);
-        //    }
+            if (!string.IsNullOrEmpty(movieName))
+            {
+                movies = movies.Where(x => x.Name == movieName);
+            }
 
-        //    return View(movies);
-        //}
+            return View(movies);
+        }
 
         public ActionResult Details(string id)
         {
@@ -151,32 +151,7 @@ namespace MovieWeb.Controllers
             base.Dispose(disposing);
         }
 
-        //public ActionResult Index(string movieName, string searchString)
-        //{
-        //    var NameLst = new List<string>();
-
-        //    var NameQry = from d in db.Movies
-        //                   orderby d.Name
-        //                   select d.Name;
-
-        //    NameLst.AddRange(NameQry.Distinct());
-        //    ViewBag.movieGenre = new SelectList(NameLst);
-
-        //    var movies = from m in db.Movies
-        //                 select m;
-
-        //    if (!String.IsNullOrEmpty(searchString))
-        //    {
-        //        movies = movies.Where(s => s.Name.Contains(searchString));
-        //    }
-
-        //    if (!string.IsNullOrEmpty(movieName))
-        //    {
-        //        movies = movies.Where(x => x.Name == movieName);
-        //    }
-
-        //    return View(movies);
-        
+       
         //Test provera git haba --> Jeste, ovo je prava provera GitHub-a posto dodajemo jos koda na postojeci
         // Evo pravim jos jedan komentar
         // Treci komentar
