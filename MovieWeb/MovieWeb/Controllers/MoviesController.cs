@@ -20,7 +20,7 @@ namespace MovieWeb.Controllers
             return View(db.Movies.ToList());
         }
 
-        // GET: Movies/Details/5
+        //GET: Movies/Details/5
         //public ActionResult Index(string movieName, string searchString)
         //{
         //    var NameLst = new List<string>();
@@ -151,32 +151,7 @@ namespace MovieWeb.Controllers
             base.Dispose(disposing);
         }
 
-        //public ActionResult Index(string movieName, string searchString)
-        //{
-        //    var NameLst = new List<string>();
-
-        //    var NameQry = from d in db.Movies
-        //                   orderby d.Name
-        //                   select d.Name;
-
-        //    NameLst.AddRange(NameQry.Distinct());
-        //    ViewBag.movieGenre = new SelectList(NameLst);
-
-        //    var movies = from m in db.Movies
-        //                 select m;
-
-        //    if (!String.IsNullOrEmpty(searchString))
-        //    {
-        //        movies = movies.Where(s => s.Name.Contains(searchString));
-        //    }
-
-        //    if (!string.IsNullOrEmpty(movieName))
-        //    {
-        //        movies = movies.Where(x => x.Name == movieName);
-        //    }
-
-        //    return View(movies);
-        
+       
         //Test provera git haba --> Jeste, ovo je prava provera GitHub-a posto dodajemo jos koda na postojeci
         // Evo pravim jos jedan komentar
         // Treci komentar
